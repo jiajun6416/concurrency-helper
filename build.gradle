@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+group 'com.jiajun.concurrent'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+version = '0.0.1'
+
+dependencies {
+    compileOnly 'io.projectreactor:reactor-core:3.3.12.RELEASE'
+    compileOnly 'com.ximalaya.mainstay:mainstay-all:3.1.6'
+
+    testImplementation 'com.ximalaya.mainstay:mainstay-all:3.1.6'
+    testImplementation 'junit:junit:4.12'
+}
